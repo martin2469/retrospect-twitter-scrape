@@ -4,7 +4,7 @@ Contains Python script to scrape tweets based on a number of parameters. Develop
 ### Setup
 In order to run the script, you must first make sure you've installed all necessary dependencies. Ensure Python and pip are updated, then run:
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### Customizing search parameters
