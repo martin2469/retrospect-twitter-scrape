@@ -28,5 +28,3 @@ python3 scrape_tweets.py
 Depending on the popularity of your keywords and the restrictiveness of your parameters, the script may take over an hour to execute. As such, the program will continually print the keyword it is currently scraping, as well as the number of tweets that have been scraped for the current keyword.
 
 Upon finishing the scrape for each keyword, the script will append results to *`all_tweets.csv`*, meaning not all keywords have to be scraped in one sitting. After finishing the scrape for all the keywords, *`all_tweets.csv`* will contain the output dataset, containing the desired number of tweets per keyword. 
-
-Be sure to delete/clear  *`all_tweets.csv`* before beginning a new scrape, or new data will just be appended to the old data.
