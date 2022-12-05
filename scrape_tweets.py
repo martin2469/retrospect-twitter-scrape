@@ -31,13 +31,11 @@ def main():
                                     'replyCount': tweet.replyCount})
             print(f"{keyword}: {num_tweets[keyword]}")
     
-    if SAMPLE_SIZE != 0:
-        for keyword in KEYWORDS:
+        if SAMPLE_SIZE != 0:
             n = SAMPLE_SIZE if num_tweets[keyword] >= SAMPLE_SIZE else num_tweets[keyword]
             tweets[keyword] = sample(tweets[keyword], n)
-    
-    df = pd.DataFrame(tweets)
-    df.to_csv('all_tweets.csv', encoding='utf-8-sig')
+            df = pd.DataFrame(tweets[keyword])
+            df.to_csv('all_tweets.csv', mode='a', encoding='utf-8-sig')
 
 
 
